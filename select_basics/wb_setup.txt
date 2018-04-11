@@ -1,0 +1,10 @@
+USE twitter;
+update users
+set first_name = "Tyler"
+WHERE id = 1;
+select * from users;
+update users
+set handle = "theanswer"
+where id = 3;
+insert into users (first_name, last_name, handle, created_at, updated_at)
+values ("Gary", "Payton", "the glove", Now(), Now());
